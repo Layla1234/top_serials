@@ -4,21 +4,75 @@
     <meta charset="UTF-8">
     <title>Portal dla miłośników dobrej rozrywki</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Amiri:400,700&amp;subset=latin-ext" rel="stylesheet">
+
 </head>
 <body>
 
 <div id="container">
     <div id="header">
-        <h1>Secret doors</h1>
+        <h1> SECRET DOORS </h1>
+
     </div>
     <div id="section">
-        Muzyka Na duzym ekranie Ksiązki Recenzje Wydarzenia kulturalne Kontakt O stronie
+       <div class="option">Strona główna</div>
+        <div class="option">Muzyka</div>
+        <div class="option">Na duzym ekranie</div>
+        <div class="option">Ksiązki</div>
+        <div class="option">Recenzje</div>
+        <div class="option">Wydarzenia kulturalne</div>
+        <div class="option">O stronie</div>
+        <div class="option">Kontakt</div>
+        <div style="clear:both;"></div>
+    </div>
+    <div is="slider">
+        <div style="clear:both;"></div>
+        <h2 class="w3-center"></h2>
 
+        <div class="w3-content w3-section" style="max-width:100%">
+            <img class="mySlides" src="library.jpg" style="width:100%">
+            <img class="mySlides" src="koko.jpg" style="width:100%">
+            <img class="mySlides" src="sztuka.jpg" style="width:100%">
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
     </div>
 <div id="topbar">
-    O stronie słow kilka <br/>
+    <div id="topbarL">
+        <img src="images/grafika.jpg"/>
+    </div>
+    <div id="topbarR">
+        <span class="bigtitle">O stronie słów kilka</span>
+        <div style="height: 15px;"></div>
+        “One of the strongest motives that lead men to art and science is escape from everyday life with its painful crudity and hopeless dreariness, from the fetters of one's own ever-shifting desires. A finely tempered nature longs to escape from the personal life into the world of objective perception and thought.”
+        ― Albert Einstein
+    </div>
+    <div style="clear:both;"></div>
+</div>
+    <div class="socials">
+        <div class="socialdivs">
+            <i class="icon-"></i>
+            <div class="fb"><a href="https://www.facebook.com/aleksandra.ptaszek.35">fb</a></div>
+            <div class="yt">yt </div>
+            <div style="clear:both;"></div>
 
-</div>
-</div>
+        </div>
+    </div>
+
 </body>
 </html>

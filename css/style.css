@@ -1,35 +1,122 @@
-
-# container
+body
 {
-    width 1000px;
+    font-family: 'Amiri', serif;
+    background-color:floralwhite;
+}
+#container
+{
+    width:1000px;
     margin-left:auto;
     margin-right: auto;
-    background-color:black;
+}
+#header
+{
+    color: #9b111e ;
+    margin-top: 20px;
+    font weight:900;
+    font-size: xx-large;
+    letter-spacing:12px;
+    text-align:center;
 
 }
-# header
-{
-    background-color:black;
-    text-color:white;
-    margin-top: 20px;
-}
-# section
- {
+#section
+ {  margin-top: 20px;
+    font-size:23px;
+    color: #491217 ;
+    padding:10px;
 
  }
-# topbar
+#slider
+{
+text-align: center;
+}
+#topbar
   {
-
+background-color:floralwhite;
+    color:ghostwhite;
+    padding:10px;
+    margin-top:20px;
+    margin-bottom:25px;
+    height:440px;
   }
-# article
+#topbarL
+{
+    float:left;
+    padding:20px;
+    width:638px;
+    text-align: left;
+    border-right:2px dotted #491217;
+}
+
+#topbarR
+{
+    float:left;
+    padding:20px;
+    width:260px;
+    font-size: 16px;
+    text-align:justify;
+    color:#491217;
+}
+
+#article
 {
 
 }
-# aside
+#aside
 {
 
 }
-# footer
+#footer
 {
 
+}
+.option
+{
+    float:left;
+    min-width: 50px;
+    height: 25px;
+    font-size: 20px;
+    padding:10px;
+    border-right:2px solid #491217;
+    opacity:0.9;
+}
+.option:hover
+{
+    background-color:#f5c6cb;
+    cursor:pointer;
+}
+.mySlides {display:none;}
+.socials
+{
+    width:100%;
+    text-align:center;
+    background-color: #f5c6cb;
+}
+.socialdivs
+{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.fb
+{
+     width:500px;
+    height:100;
+    float:left;
+
+}
+.fb:hover
+{
+    background-color:#4668b3;
+}
+.yt
+{
+    width:500px;
+    height:100;
+    float:left;
+
+}
+.yt:hover
+{
+    background-color:#d94348;
 }
