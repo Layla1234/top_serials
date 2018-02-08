@@ -12,10 +12,10 @@ body
 #header
 {
     color: #9b111e ;
-    margin-top: 20px;
+    margin-top: 10px;
     font weight:900;
     font-size: xx-large;
-    letter-spacing:12px;
+    letter-spacing:14px;
     text-align:center;
 
 }
@@ -57,6 +57,17 @@ background-color:floralwhite;
     text-align:justify;
     color:#491217;
 }
+a:link
+{
+    color:black;
+}
+a:visited
+{
+   color:#dc3545;
+}
+a:hover
+{color:#f5c6cb;
+}
 
 #article
 {
@@ -79,10 +90,11 @@ background-color:floralwhite;
     padding:10px;
     border-right:2px solid #491217;
     opacity:0.9;
+    background-color:#f5c6cb ;
 }
 .option:hover
 {
-    background-color:#f5c6cb;
+    background-color:#dc3545;
     cursor:pointer;
 }
 .mySlides {display:none;}
@@ -119,4 +131,16 @@ background-color:floralwhite;
 .yt:hover
 {
     background-color:#d94348;
+}
+a.tilelink
+{
+    color:#white;
+    text-decoration:none;
+
+}
+.footer
+{
+    text-align:center;
+    padding:10px;
+
 }
