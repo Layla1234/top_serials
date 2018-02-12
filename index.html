@@ -11,29 +11,52 @@
 <body>
 
 <div id="container">
-    <div id="header">
-            <p>Secret doors</p>
+    <div style="position:absolute; right:3%; top:3%">
+        <a href="pages/zaloguj.html"> zaloguj się </a>
     </div>
-    <div id="section">
-       <div class="option">Strona główna</div>
-        <div class="option">Muzyka</div>
-        <div class="option">Na duzym ekranie</div>
-        <div class="option">Ksiązki</div>
-        <div class="option">Recenzje</div>
-        <div class="option">Wydarzenia kulturalne</div>
-        <div class="option">O stronie</div>
-        <div class="option">Kontakt</div>
-        <div style="clear:both;"></div>
+    <div id="header">
+        <p>Secret doors</p>
+    </div>
+    <div class="nav">
+<ol>
+   <li><a href="index.html">Strona Głowna</a></li>
+    <li><a href="pages/music.html">Muzyka</a>
+    <ul>
+        <li><a href="pages/playlists.html">Playlisty</a>
+        <ul>
+            <li><a href="pages/playlists/indie.html">muzyka indie</a></li>
+            <li><a href="pages/classic.html">muzyka klasyczma</a></li>
+            <li><a href="pop.html">muzyka pop</a></li>
+            <li><a href="soundtracks.html">soundtracks</a></li>
+            <li><a href="rock.html">rock/heavy metal</a></li>
+        </ul>
+       </li>
+
+        <li><a href="artists.html"<a/>Artyści</li>
+    </ul>
+    </li>
+    <li><a href="movie.html">Kino</a>
+    <ul>
+        <li><a href="serials.html">Seriale</a></li>
+        <li><a href="movies.html"<a/>Filmy</li>
+    </ul>
+    </li>
+    <li><a href="cultural_events">Wydarzenia kulturalne</a></li>
+    <li><a href="news.html">Recenzje</a></li>
+    <li><a href="news.html">Sztuka</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+
+</ol>
     </div>
     <div is="slider">
         <div style="clear:both;"></div>
         <h2 class="w3-center"></h2>
 
-        <div class="w3-content w3-section" style="max-width:100%">
+        <div class="w3-content w3-section" style="max-width:80%%">
             <img class="mySlides" src="images/library.jpg" style="width:100%">
             <img class="mySlides" src="images/koko.jpg" style="width:100%">
             <img class="mySlides" src="images/sztuka.jpg" style="width:100%">
-            <img class="mySlides" src="images/sztuka.jpg" style="width:100%">
+            <img class="mySlides" src="images/muzyka.jpg" style="width:100%">
         </div>
 
         <script>
@@ -74,11 +97,35 @@
                 <a href="https://www.youtube.com/channel/UCysuawA6o3zCRQtPhnj7lgg?view_as=subscriber" class="tilelink"> <i class="icon-youtube"></i></a>
             </div>
             <div style="clear:both;"></div>
-
         </div>
     </div>
     <div class="footer">top_serials.com &copy; 2018 Dziękuje za odwiedzenie tego miejsca :)
     </div>
 </div>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+        var NavY = $('.nav').offset().top;
+
+        var stickyNav = function(){
+            var ScrollY = $(window).scrollTop();
+
+            if (ScrollY > NavY) {
+                $('.nav').addClass('sticky');
+            } else {
+                $('.nav').removeClass('sticky');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+
+</script>
+
 </body>
 </html>
