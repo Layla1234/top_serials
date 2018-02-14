@@ -454,3 +454,11 @@ a.header1
     height:500px;
     width: 100%;
 }
+#container1
+{
+
+    width:100%;
+    margin-left:auto;
+    margin-right: auto;
+    height:1000px;
+}
