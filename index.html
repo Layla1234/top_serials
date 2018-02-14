@@ -11,9 +11,55 @@
 <body>
 
 <div id="container">
-    <div style="position:absolute; right:3%; top:3%">
-        <a href="pages/zaloguj.html"> zaloguj się </a>
+    <div id="zaloguj">
+        <a href="pages/zaloguj.html"><b>zaloguj się</b></a>
     </div>
+    <form action="http://www.google.pl/search" method="get">
+        <input type="text" name="q" />
+        <input type="hidden" name="ie" value="iso-8859-2" />
+        <input type="hidden" name="sitesearch" value="google.pl" />
+        <input type="submit" value="Szukaj" />
+        <style>
+
+            input[type=submit] {
+                position: absolute;
+                right:20%;
+                top: 3%;
+                width: 80px;
+                background-color: #f1b0b7;
+                font-size: 11px;
+                color: black;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                letter-spacing: 2px;
+                outline: none;
+                margin-top: auto;
+            height: 40px;
+
+            }
+
+                input[type=text]
+                {
+                    position: absolute;
+                    right: 8%;
+                    top: 3%;
+                    width: 150px;
+                    background-color:whitesmoke;
+                    color: #721c24;
+                    border: 2px solid #ddd;
+                    border-radius: 5px;
+                    font-size: 11px;
+                    box-sizing: border-box;
+                    outline: none;
+                    margin-top: auto;
+                    height: 40px;
+                }
+
+        </style>
+    </form>
+
+
     <div id="header">
         <p>Secret doors</p>
     </div>
@@ -25,10 +71,10 @@
         <li><a href="pages/playlists.html">Playlisty</a>
         <ul>
             <li><a href="pages/music/playlists/indie.html">muzyka indie</a></li>
-            <li><a href="pages/classic.html">muzyka klasyczma</a></li>
-            <li><a href="pop.html">muzyka pop</a></li>
-            <li><a href="soundtracks.html">soundtracks</a></li>
-            <li><a href="rock.html">rock/heavy metal</a></li>
+            <li><a href="pages/music/playlists/classic.html">muzyka klasyczna</a></li>
+            <li><a href="pages/music/playlists/pop.html">muzyka pop</a></li>
+            <li><a href="pages/music/playlists/soundtrack.html">soundtracks</a></li>
+            <li><a href="pages/music/playlists/rock.html">rock/heavy metal</a></li>
         </ul>
        </li>
 
@@ -38,7 +84,7 @@
     <li><a href="movie.html">Kino</a>
     <ul>
         <li><a href="serials.html">Seriale</a></li>
-        <li><a href="movies.html"<a/>Filmy</li>
+        <li><a href="pages/movie/movies.html"<a/>Filmy</li>
     </ul>
     </li>
     <li><a href="cultural_events">Wydarzenia kulturalne</a></li>
@@ -52,7 +98,7 @@
         <div style="clear:both;"></div>
         <h2 class="w3-center"></h2>
 
-        <div class="w3-content w3-section" style="max-width:80%%">
+        <div class="w3-content w3-section" style="max-width:100%">
             <img class="mySlides" src="images/library.jpg" style="width:100%">
             <img class="mySlides" src="images/koko.jpg" style="width:100%">
             <img class="mySlides" src="images/sztuka.jpg" style="width:100%">

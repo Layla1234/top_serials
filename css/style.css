@@ -1,35 +1,37 @@
 body {
     font-family: 'Amiri', serif;
-    background-color:floralwhite;
+    background-color: floralwhite;
 }
 #container
 {
     width:100%;
     margin-left:auto;
     margin-right: auto;
+    height:1200px;
 }
 
 .nav
 {
     width:100%;
-    padding:20px 0;
+    padding:10px 0;
     background-color:#f5c6cb;
     text-align:center;
     margin-top:0;
     float:left;
-
+    height: 60px;
 }
 
 
 #slider
 {
 text-align: center;
+    padding-top: 0;
 }
 #topbar
   {
 background-color:floralwhite;
     color:ghostwhite;
-    padding:2%;
+    padding:10px;
     margin-top:20px;
     margin-bottom:25px;
     height:440px;
@@ -37,16 +39,18 @@ background-color:floralwhite;
 #topbarL
 {
     float:left;
-    padding:4%;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px;
     width:50%;
     text-align: center
     border-right:2px dotted #491217;
 }
 
 #topbarR
-{
+{   margin-top:20px;
     float:left;
-    padding:4%;
+    padding:10px;
     width:34%;
     font-size: 20px;
     text-align:justify;
@@ -63,18 +67,6 @@ a:visited
 a:hover
 {color:#f5c6cb}
 
-#article
-{
-
-}
-#aside
-{
-
-}
-#footer
-{
-
-}
 
 .mySlides {display:none;}
 .socials
@@ -115,7 +107,8 @@ a:hover
 .footer
 {
     text-align:center;
-    padding:10px;
+   top-padding:10px;
+    clear:both;
 
 }
 #header {
@@ -126,9 +119,10 @@ a:hover
     overflow:hidden;
     letter-spacing: 12px;
     text-align: center;
-    color: #b21f2d;
+    color: #23272b;
     text-decoration: none;
     display:block;
+    padding-bottom: 0%;
 }
 a.header
 {
@@ -155,6 +149,7 @@ ol
     width:1200px;
 
 
+
 }
 ol a
 {
@@ -174,6 +169,7 @@ ol > li
 ol>li:first-child
 {
     border-left:1px dashed #491217;
+
 }
 ol>li:hover{
     background-color:#f1b0b7;
@@ -202,6 +198,7 @@ ol > li > ul > li
     position: relative;
     z-index: 100;
     border-top: 1px dashed #751b1b;
+    list-style-type:none;
 }
 
 ol > li > ul > li:hover
@@ -218,12 +215,7 @@ ol > li > ul > li:hover > a
     color: #491217;
 
 }
-body
-{
-    /* Background pattern from subtlepatterns.com */
-    background-image: url("img/hexellence.png");
-    font-size: 20px;
-}
+
 
 #logowanie
 {
@@ -233,6 +225,9 @@ body
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
+    -webkit-box-shadow: 11px 8px 25px 12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 8px 25px 12px rgba(168, 0, 36, 0.75);
+    box-shadow: 11px 8px 25px 12px rgba(0,0,0,0.75);
 }
 
 
@@ -258,14 +253,14 @@ input[type=password]:focus
     -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
     box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
     border: 2px solid #a5cda5;
-    background-color: #e9f3e9;
-    color: #428c42;
+    background-color:#efa2a9;
+    color: #23272b;
 }
 
 input[type=submit]
 {
     width: 300px;
-    background-color: #36b03c;
+    background-color: #b21f2d;
     font-size:20px;
     color: white;
     padding: 15px 10px;
@@ -286,7 +281,7 @@ input[type=submit]:focus
 
 input[type=submit]:hover
 {
-    background-color: #37b93d;
+    background-color: #efa2a9;
 }
 
 input::-webkit-input-placeholder
@@ -295,7 +290,7 @@ input::-webkit-input-placeholder
 }
 input:focus::-webkit-input-placeholder
 {
-    color: #428C42;
+    color: #efa2a9;
 }
 /* Firefox < 19 */
 input:-moz-placeholder
@@ -304,7 +299,7 @@ input:-moz-placeholder
 }
 input:focus:-moz-placeholder
 {
-    color: #428C42;
+    color: #efa2a9;
 }
 /* Firefox > 19 */
 input::-moz-placeholder
@@ -313,7 +308,7 @@ input::-moz-placeholder
 }
 input:focus::-moz-placeholder
 {
-    color: #428C42;
+    color:#efa2a9;
 }
 /* Internet Explorer 10 */
 input:-ms-input-placeholder
@@ -323,4 +318,139 @@ input:-ms-input-placeholder
 input:focus:-ms-input-placeholder
 {
     color: #428C42;
+}
+#page
+{
+    background-color:floralwhite;
+    color:#491217;
+    padding:2%;
+    margin-top:20px;
+    margin-bottom:0;
+    height:1000px;
+    width: 96%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+#page11
+ {margin-top:25px;
+     background-color:floralwhite;
+     float:left;
+    width:50%;
+    height:280px;
+    text-align: center;
+    margin-bottom: 8px;
+ }
+#page12
+{margin-top:25px;
+    background-color:floralwhite;
+    float:right;
+    width:50%;
+    height:280px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+#page21
+{margin-top:25px;
+    background-color:floralwhite;
+    float:left;
+    width:50%;
+    height:280px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+#page22
+{
+    margin-top:25px;
+    background-color:floralwhite;
+    float:right;
+    width:50%;
+    height:280px;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+page22 a
+{
+    text-decoration: none;
+}
+#page31
+{margin-top:25px;
+    background-color:floralwhite;
+    float:left;
+    width:50%;
+    height:280px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+#page32
+{margin-top:25px;
+    background-color:floralwhite;
+    float:left;
+    width:50%;
+    height:280px;
+    text-align: center;
+    color: #491217;
+}
+#zaloguj
+{
+    position:absolute;
+    margin-top:1%;
+    background-color:floralwhite;
+    margin-right: auto;
+    font-size: 18px;
+
+
+}
+a.zaloguj
+{
+    color: black;
+    text-decoration: none;
+
+}
+#header1
+{
+    text-align: center;
+    margin-bottom:0px;
+    margin-top:25px;
+    color:#23272b;
+    letter-spacing:6px;
+}
+a.header1
+{
+   padding-top: 25px;
+}
+#topbarR1
+{   margin-top: 10%;
+    float:left;
+    padding:10px;
+    width:45%;
+    font-size: 20px;
+    text-align:center;
+    color:#491217;
+   background-color: floralwhite;
+    height:350px;
+
+}
+
+#topbarL1
+{
+    float:left;
+    padding:10px;
+    margin-top:8%;
+    width:50%;
+    text-align: center;
+    border-right:2px dotted #491217;
+    height:500px;
+}
+}
+#topbar1
+{
+    margin-top:10%;
+    background-color:floralwhite;
+    color:ghostwhite;
+    padding:10px;
+    margin-bottom:25px;
+    height:500px;
+    width: 100%;
 }

@@ -1,10 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <title>logowanie</title>
+    <meta name="description" content="Nauka podstawowego stylizowania elementów formularzy" />
+    <meta name="keywords" content="css, odcinek" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+
+
 </head>
+
 <body>
 
+<div id="container">
+    <div id="zaloguj">
+        <a href="../zaloguj.html"><b>zaloguj się</b></a>
+    </div>
+    <form action="http://www.google.pl/search" method="get">
+        <input type="text" name="q" />
+        <input type="hidden" name="ie" value="iso-8859-2" />
+        <input type="hidden" name="sitesearch" value="google.pl" />
+        <input type="submit" value="Szukaj" />
+        <style>
+
+            input[type=submit] {
+                position: absolute;
+                right:20%;
+                top: 3%;
+                width: 80px;
+                background-color: #f1b0b7;
+                font-size: 11px;
+                color: black;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                letter-spacing: 2px;
+                outline: none;
+                margin-top: auto;
+                height: 40px;
+
+            }
+
+            input[type=text]
+            {
+                position: absolute;
+                right: 8%;
+                top: 3%;
+                width: 150px;
+                background-color:whitesmoke;
+                color: #721c24;
+                border: 2px solid #ddd;
+                border-radius: 5px;
+                font-size: 11px;
+                box-sizing: border-box;
+                outline: none;
+                margin-top: auto;
+                height: 40px;
+            }
+
+        </style>
+    </form>
+
+
+    <div id="header">
+        <p>Secret doors</p>
+
+    </div>
+    <div class="nav">
+        <ol>
+            <li><a href="../../index.html">Strona Głowna</a></li>
+            <li><a href="../music.html">Muzyka</a>
+                <ul>
+                    <li><a href="pages/playlists.html">Playlisty</a>
+                        <ul>
+                            <li><a href="../music/playlists/indie.html">muzyka indie</a></li>
+                            <li><a href="../music/playlists/classic.html">muzyka klasyczma</a></li>
+                            <li><a href="../music/playlists/pop.html">muzyka pop</a></li>
+                            <li><a href="../music/playlists/soundtracks.html">soundtracks</a></li>
+                            <li><a href="../music/playlists/rock.html">rock/heavy metal</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="artists.html"<a/>Artyści</li>
+                </ul>
+            </li>
+            <li><a href="movie.html">Kino</a>
+                <ul>
+                    <li><a href="serials.html">Seriale</a></li>
+                    <li><a href="movies.html"<a/>Filmy</li>
+                </ul>
+            </li>
+            <li><a href="cultural_events">Wydarzenia kulturalne</a></li>
+            <li><a href="news.html">Recenzje</a></li>
+            <li><a href="news.html">Sztuka</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+
+        </ol>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+<div id="header1">
+    <h2>Wybierz gatunek filmu..</h2>
+
+<div id="page">
+    <div id="page11">
+        <a href="dramaty.html"><img width="90%" height="280px" src="../../images/krull.jpg" /><b>fantasy</b></a>
+    </div>
+
+    <div id="page12">
+        <a href="comedy.html"><img width="90%" height="280px" src="../../images/pretty.jpg" /><b>komedia</b></a>
+    </div>
+    <div id="page21">
+        <a href="comedy.html"><img width="90%" height="280px" src="../../images/grease.jpg" /><b>musical</b></a>
+    </div>
+    <div id="page22">
+        <a href="comedy.html"><img width="90%" height="280px" src="../../images/Beautiful-Mind.jpg" /><b>dramat</b></a>
+    </div>
+    <div id="page31">
+        <a href="comedy.html"><img width="90%" height="280px" src="../../images/brain.jpg" /><b>horror</b></a>
+    </div>
+    <div id="page32">
+        <a href="comedy.html"><img width="90%" height="280px" src="../../images/pobrane.jpg" /><b>historyczny</b></a>
+    </div>
+</div>
+<div class="socials">
+    <div class="socialdivs">
+        <div class="fb">
+            <a href="https://www.facebook.com/aleksandra.ptaszek.35" class="tilelink"> <i class="icon-facebook-squared"></i></a>
+        </div>
+        <div class="yt">
+            <a href="https://www.youtube.com/channel/UCysuawA6o3zCRQtPhnj7lgg?view_as=subscriber" class="tilelink"> <i class="icon-youtube"></i></a>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>
+
+<div class="footer">top_serials.com &copy; 2018 Dziękuje za odwiedzenie tego miejsca :)
+</div>
+</div>
+<script src="jquery-3.3.1.min.js"></script>
+<script>ss
+
+    $(document).ready(function() {
+        var NavY = $('.nav').offset().top;
+
+        var stickyNav = function(){
+            var ScrollY = $(window).scrollTop();
+
+            if (ScrollY > NavY) {
+                $('.nav').addClass('sticky');
+            } else {
+                $('.nav').removeClass('sticky');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+
+</script>
+</div>
 </body>
 </html>
