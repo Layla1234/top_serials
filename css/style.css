@@ -39,7 +39,6 @@ background-color:floralwhite;
 #topbarL
 {
     float:left;
-    margin: 0 auto;
     display: inline-block;
     padding: 10px;
     width:50%;
@@ -48,7 +47,7 @@ background-color:floralwhite;
 }
 
 #topbarR
-{   margin-top:20px;
+{   margin:auto;
     float:left;
     padding:10px;
     width:34%;
@@ -80,6 +79,7 @@ a:hover
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+	margin-top:0;
 }
 .fb
 {
@@ -169,6 +169,7 @@ ol > li
 ol>li:first-child
 {
     border-left:1px dashed #491217;
+	 list-style-type:none;
 
 }
 ol>li:hover{
@@ -326,7 +327,7 @@ input:focus:-ms-input-placeholder
     padding:2%;
     margin-top:20px;
     margin-bottom:0;
-    height:1000px;
+    height:110%;
     width: 96%;
     margin-right: auto;
     margin-left: auto;
@@ -337,7 +338,7 @@ input:focus:-ms-input-placeholder
      background-color:floralwhite;
      float:left;
     width:50%;
-    height:280px;
+    height:25%;;
     text-align: center;
     margin-bottom: 8px;
  }
@@ -346,16 +347,17 @@ input:focus:-ms-input-placeholder
     background-color:floralwhite;
     float:right;
     width:50%;
-    height:280px;
+    height:25%;
     text-align: center;
-    margin-bottom: 8px;
+	   margin-bottom: 8px;
+
 }
 #page21
 {margin-top:25px;
     background-color:floralwhite;
     float:left;
     width:50%;
-    height:280px;
+    height:25%;
     text-align: center;
     margin-bottom: 8px;
 }
@@ -365,21 +367,16 @@ input:focus:-ms-input-placeholder
     background-color:floralwhite;
     float:right;
     width:50%;
-    height:280px;
+    height:25%;
     text-align: center;
     margin-bottom: 8px;
-
-}
-page22 a
-{
-    text-decoration: none;
 }
 #page31
 {margin-top:25px;
     background-color:floralwhite;
     float:left;
     width:50%;
-    height:280px;
+    height:25%;
     text-align: center;
     margin-bottom: 8px;
 }
@@ -388,9 +385,10 @@ page22 a
     background-color:floralwhite;
     float:left;
     width:50%;
-    height:280px;
+    height:25%;
     text-align: center;
     color: #491217;
+	 margin-bottom: 8px;
 }
 #zaloguj
 {
@@ -399,6 +397,7 @@ page22 a
     background-color:floralwhite;
     margin-right: auto;
     font-size: 18px;
+	margin-left:4%;
 
 
 }
@@ -411,17 +410,19 @@ a.zaloguj
 #header1
 {
     text-align: center;
-    margin-bottom:0px;
-    margin-top:25px;
+	margin-top: 45px;	
+	margin-bottom:0;
+    margin-top:10%;
     color:#23272b;
-    letter-spacing:6px;
+    letter-spacing:5px;
+	font-weight: 400;
 }
 a.header1
 {
-   padding-top: 25px;
+   margin-top:5%;
 }
 #topbarR1
-{   margin-top: 10%;
+{   margin-top:12%;
     float:left;
     padding:10px;
     width:45%;
@@ -429,30 +430,61 @@ a.header1
     text-align:center;
     color:#491217;
    background-color: floralwhite;
-    height:350px;
 
+}
+#container2
+{
+	height:2000px;
 }
 
 #topbarL1
-{
+{    margin-top:0;
     float:left;
     padding:10px;
     margin-top:8%;
     width:50%;
     text-align: center;
     border-right:2px dotted #491217;
-    height:500px;
-}
 }
 #topbar1
 {
-    margin-top:10%;
+    margin-top:0;
     background-color:floralwhite;
     color:ghostwhite;
     padding:10px;
     margin-bottom:25px;
-    height:500px;
     width: 100%;
+	    height:440px;
+
+}
+#topbar2
+  {
+background-color:floralwhite;
+    color:ghostwhite;
+    padding:10px;
+    margin-top:20px;
+    margin-bottom:25px;
+    height:440px;
+  }
+#topbarL2
+{
+	margin-top:8%;
+    float:left;
+    display: inline-block;
+    padding: 10px;
+    width:50%;
+    text-align: center
+    border-right:2px dotted #491217;
+}
+
+#topbarR2
+{   margin:auto;
+    float:left;
+    padding:10px;
+    width:34%;
+    font-size: 20px;
+    text-align:justify;
+    color:#491217;
 }
 #container1
 {
@@ -460,5 +492,39 @@ a.header1
     width:100%;
     margin-left:auto;
     margin-right: auto;
-    height:1000px;
+
+}
+#topbar3
+{
+	background-color:floralwhite;
+    color:black;
+    padding:10px;
+    margin-top:10%;
+	text-align:center;
+   
+}
+.artist
+{
+	background-color:floralwhite;
+    color:black;
+    padding:10px;
+    margin-top:20px;
+    margin-bottom:25px;
+}
+.lefta
+{    margin-top:5%;
+	 float:left;
+    display: inline-block;
+    padding: 10px;
+    width:40%;
+    text-align: center
+	border-right:2px dotted #491217;
+}
+.righta
+{margin-top:5%;
+    float:left;
+    width:48%;
+    font-size: 20px;
+    text-align:justify;
+    color:black;
 }
